@@ -1,0 +1,13 @@
+aside {
+	width: 300px;
+	float: left;
+	margin-right: 50px;
+}
+
+article {
+	float: left;
+	width: calc(100% - 350px);
+	padding: 20px;
+	background: white;
+	border: 1px solid #eee;
+}

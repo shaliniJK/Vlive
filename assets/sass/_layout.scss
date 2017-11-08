@@ -1,0 +1,100 @@
+// header 
+
+header {
+	background: $red;
+	padding: 40px;
+	text-align: center;
+	color: white;
+
+	h1 {
+		font-size: 21px;
+		color: white;
+	}
+
+	span {
+		color: #eee;
+		font-size: 12px;
+	}
+}
+
+
+// main 
+
+main {
+	padding: 40px;
+}
+
+.article__header {
+	border-bottom: 1px solid #eee;
+	ul {
+		display: block;
+		width: 100%;
+		padding-bottom: 10px;
+	}
+	li {
+		display: inline-block;
+		color: $red;
+		border-right: 1px solid #eee;
+		a {
+			padding: 0 20px;
+			color: inherit;
+			text-decoration: none;
+			display: block;
+			width: 100%;
+			height: 100%;
+
+			i {
+				margin-right: 10px;
+			}
+
+			&:hover {
+				color: $black;
+			}
+		}
+
+		&:first-child {
+			a {
+				padding-left: 0;
+			}
+		}
+
+		&:last-child {
+			border-right: none;
+		}
+	}
+}
+
+.article__content {
+	padding: 20px 0;
+}
+
+footer {
+	padding: 40px 80px;
+	background: white;
+	border-top: 1px solid #eee;
+
+	ul {
+		@extends .cf;
+		li {
+			display: block;
+			margin-bottom: 20px;
+			float: left; 
+			margin-right: 40px;
+			padding-right: 40px;
+			border-right: 1px solid $light-gray;
+
+			ul {
+				@extends .cf;
+				li {
+					float: none;
+					margin-right: 0;
+					border: none;
+				}
+			}
+
+			a {
+				color: $red;
+			}
+		}
+	}
+}
